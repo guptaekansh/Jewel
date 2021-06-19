@@ -19,11 +19,12 @@
 	
         Price       :&emsp;&emsp;&emsp; <input type="text"  name="item value" value="{{ request.form['item value'] }}" placeholder="Price of item" required="required" />
         <br/><br/>
-    	Borrow Date : <input type="text" name="borrow_date" value="{{ request.form['borrow_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
-    	<br/><br/>
-        Interest    :&emsp;&emsp; <input type="text" name="intrest_per_100Rupees" value="{{ request.form['intrest_per_100Rupees'] }}" placeholder="Intrest (per 100 rupees)" required="required" /><br/>
+	Interest    :&emsp;&emsp; <input type="text" name="intrest_per_100Rupees" value="{{ request.form['intrest_per_100Rupees'] }}" placeholder="Intrest (per 100 rupees)" required="required" /><br/>
 		
         <br/>
+    	Borrow Date : <input type="text" name="borrow_date" value="{{ request.form['borrow_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
+    	<br/><br/>
+        
         Return Date : <span>&emsp;{{current_date}}</span> <br/><br/>
         <button type="submit" class="btn btn-primary btn-block btn-large">Amount</button> 
         
