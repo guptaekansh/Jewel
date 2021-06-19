@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>DEEPAK JEWELLERS </h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/Amount" method="post">
+        Price       :&emsp;&emsp;&emsp; <input type="text"  name="item value" value="{{ request.form['item value'] }}" placeholder="Price of item" required="required" />
+        <br/><br/>
+    	Borrow Date : <input type="text" name="borrow_date" value="{{ request.form['borrow_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
+    	<br/><br/>
+        Interest    :&emsp;&emsp; <input type="text" name="intrest_per_100Rupees" value="{{ request.form['intrest_per_100Rupees'] }}" placeholder="Intrest (per 100 rupees)" required="required" /><br/>
+		
+        <br/>
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Amount</button> 
+        
+       
+            
+    </form>
+
+   <br>
+   <br>
+   <form action="{{ url_for('Reset')}}" method="post">
+Days elapsed : <input value={{days}}></input> <br/><br/>
+            Amount : <span>&emsp;{{result}}</span> <br/><br/>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Reset</button><br/>
+{{error}}
+ </div>
+
+
+</body>
+</html>
