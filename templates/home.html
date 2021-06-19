@@ -16,6 +16,7 @@
 	<h1>DEEPAK JEWELLERS </h1>
      <!-- Main Input For Receiving Query to our ML -->
     <form action="/Amount" method="post">
+	
         Price       :&emsp;&emsp;&emsp; <input type="text"  name="item value" value="{{ request.form['item value'] }}" placeholder="Price of item" required="required" />
         <br/><br/>
     	Borrow Date : <input type="text" name="borrow_date" value="{{ request.form['borrow_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
@@ -23,7 +24,7 @@
         Interest    :&emsp;&emsp; <input type="text" name="intrest_per_100Rupees" value="{{ request.form['intrest_per_100Rupees'] }}" placeholder="Intrest (per 100 rupees)" required="required" /><br/>
 		
         <br/>
-        
+        Amount : <span>&emsp;{{result}}</span> <br/><br/>
         <button type="submit" class="btn btn-primary btn-block btn-large">Amount</button> 
         
        
