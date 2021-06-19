@@ -30,7 +30,7 @@ def Amount():
     #item_value= 5000
     #print(Days)
     total_amount = item_value+((item_value * intrest * Days)/3000)
-    return render_template('home.html', result=total_amount, days=Days, borrow_date=borrow_date, item_value=item_value , intrest=intrest)
+    return render_template('home.html',current_date=d1, result=total_amount, days=Days, borrow_date=borrow_date, item_value=item_value , intrest=intrest)
 
 @app.route('/Reset' ,methods=['POST'])
 def Reset():
