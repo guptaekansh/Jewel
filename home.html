@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>DEEPAK JEWELLERS </h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('Amount')}}" method="post">
+        Price : <input type="text" name="item value" placeholder="Price of item" required="required" />
+        <br/>
+    	Borrow Date : <input type="text" name="borrow_date" placeholder="In dd,mm,yyyy format" required="required" />
+    	<br/>
+        Interest : <input type="text" name="intrest_per_100Rupees" placeholder="Intrest (per 100 rupees)" required="required" /><br/>
+		
+        <br/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Amount</button>
+    </form>
+
+   <br>
+   <br>
+   
+   Days elapsed : <p>days</p> <br/><br/><br/><br/>
+   Amount : <p>result</p> <br/>
+   
+ </div>
+
+
+</body>
+</html>
