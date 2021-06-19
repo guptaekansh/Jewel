@@ -1,0 +1,90 @@
+.top_header{
+background-color : #000000;
+height: 40px;
+width:100%;
+position:fixed;
+top:40px;
+    left:0px;
+    opacity:0.9
+}
+.topmost_header{
+background-color : #FFFFFF;
+height: 40px;
+width:100%;
+position:fixed;
+
+    left:0px;
+    opacity:0.9
+}
+
+.contact{
+color: #FFFFFF;
+font-size: 20px;
+position: fixed;
+right: 20px;
+top:50px;
+
+}
+.logo{
+color: #000000;
+font-size: 25px;
+position: fixed;
+left: 20px;
+top:10px;
+font-family: sans;
+font-weight: bold;
+
+}
+#test{
+color: #808080;
+font-size: 100px
+}
+
+.img_{
+position: fixed;
+top:85px;
+
+left:0px;
+}
+#username{
+	position:relative;
+	top:100px;
+	left:50px;
+	height: 30px;
+	width:250px;
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #FFFFFF;
+	font-size: 15px;
+}
+#password{
+	position:relative;
+	top:120px;
+	left:50px;
+	height: 30px;
+	width:250px;
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #FFFFFF;
+	font-size: 15px;
+}
+#button{
+	position:relative;
+	top:140px;
+	left:50px;
+	height: 30px;
+	width:250px;
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #FFFF00;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#message{
+position: relative;
+color: #FFFFFF;
+top:175px;
+left:500px;
+font-size: 20px;
+}
+
