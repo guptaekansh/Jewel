@@ -29,8 +29,9 @@ def Amount():
         return render_template('home.html', error='** Please enter valid Price')
     #item_value= 5000
     #print(Days)
-    total_amount = item_value+((item_value * intrest * Days)/3000)
-    return render_template('home.html',current_date=d1.strftime("%d,%m,%Y"), result=total_amount, days=Days, borrow_date=borrow_date, item_value=item_value , intrest=intrest)
+    interest_amount= round( ((item_value/100) * intrest * (Days/30)) , 2)
+    total_amount = item_value + interest_amount
+    return render_template('home.html',current_date=d1.strftime("%d,%m,%Y"), result=total_amount, days=Days, borrow_date=borrow_date, item_value=item_value , intrest=intrest , interest=interest_amount)
 
 @app.route('/Reset' ,methods=['POST'])
 def Reset():
