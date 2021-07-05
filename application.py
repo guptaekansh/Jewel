@@ -21,8 +21,8 @@ def Amount():
     delta = d1 - d0
     Days=delta.days
     
-    intrest= int(request.form.get('intrest_per_100Rupees'))
-    if( (intrest <=0)  & (intrest>100) ):
+    intrest= float(request.form.get('intrest_per_100Rupees'))
+    if( (intrest <=0.0)  & (intrest>100.0) ):
         return render_template('home.html', error='Please enter valid Interest rate')
     item_value=int(request.form.get('item value'))
     if(type(item_value) != int):
