@@ -17,7 +17,14 @@ def Amount():
         return render_template('home.html', error='Please enter valid borrow date in required format')
     day,month,year= map(int, borrow_date.split(','))
     d0 = date(year,month,day)
-    d1 = date.today()#date(2008, 9, 26)
+    
+    return_date= request.form.get("return_date")
+    if((return_date == '') | (len(return_date.split(','))!=3) ):
+        return render_template('home.html', error='Please enter valid retunr date in required format')
+    day2,month2,year2= map(int, return_date.split(','))
+    d0 = date(year,month,day)
+    d1= date(year2,month2,day2)
+    #d1 = date.today()#date(2008, 9, 26)
     delta = d1 - d0
     Days=delta.days
     
