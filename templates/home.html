@@ -34,8 +34,9 @@
         <br/>
     	Borrow Date : <input type="text" name="borrow_date" value="{{ request.form['borrow_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
     	<br/><br/>
-        
-        Return Date : <span>&emsp;{{current_date}}</span> <br/><br/>
+        Return Date : <input type="text" name="return_date" value="{{ request.form['return_date'] }}" placeholder=" dd,mm,yyyy" required="required" />
+    	<br/><br/>
+        <!--Return Date : <span>&emsp;{{current_date}}</span> <br/><br/>-->
         <button type="submit" class="btn btn-primary btn-block btn-large">Amount</button> 
         
        
